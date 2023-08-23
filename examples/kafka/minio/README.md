@@ -12,7 +12,8 @@ During restore, topic messages are purged first before the restore operation is 
 
 ## Assumption
 
-* No consumer is consuming the topic at the moment topic is being restored.
+* No Producer is creating records in the topic when a backup is performed.
+* No consumer is consuming the topic when the topic is being restored.
 
 ## Installing the Chart
 
